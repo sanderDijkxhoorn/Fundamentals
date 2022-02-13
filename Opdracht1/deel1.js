@@ -1,7 +1,3 @@
-// var number1 = "4";
-// var number2 = "0";
-// var number3 = "1";
-
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -24,6 +20,5 @@ rl.question('A: ', function (number1) {
 });
 
 rl.on('close', function () {
-    //Hier kan je bijv een doei bericht doen :)
     process.exit(0);
 });
