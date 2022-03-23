@@ -1,8 +1,11 @@
 function CalculateFactorial(number) {
-    if (number === 0)
-      { return 1; }
-    else
-      { return number * number - 1 }
+  var countnr = 1;
+  var math = number;
+  while (number > countnr) {
+    math = math * countnr;
+    countnr++;
+  }
+  return math;
 }
 
-console.log(CalculateFactorial(4));
+console.log(CalculateFactorial(8));
