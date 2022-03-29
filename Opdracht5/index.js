@@ -1,12 +1,26 @@
-const arr1 = ["67", "27", "12"];
-const arr2 = ["90", "63", "94"];
-const arr3 = ["36", "58", "37"];
+var arrarr2 = [
+    ["67", "27", "12"], 
+    ["90", "63", "94"], 
+    ["36", "58", "37"]
+];
 
-const arrarr = [arr1, arr2, arr3];
+// darray(arrarr2);
 
-function darray(snigger) {
-    console.log(snigger);
+// // returns
+// [
+//     ["36", "90", "67"], 
+//     ["58", "63", "27"], 
+//     ["37", "94", "12"]
+// ];
+
+function darray(array) {
+    var result = [
+        [array[2][0], array[1][0], array[0][0]],
+        [array[2][1], array[1][1], array[0][1]],
+        [array[2][2], array[1][2], array[0][2]]
+    ];
+    return result;    
 }
 
-
-darray(arrarr);
+console.log(arrarr2);
+console.log(darray(arrarr2));
